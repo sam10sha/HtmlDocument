@@ -30,6 +30,7 @@ getElement();
 This will provide all the HTML in a single HTMLElement.
 
 The HTMLElement can be used to objectify all objects in the HTML page. With HTMLElement, the title, content, attributes, and child elements can be retrieved. Simply use the methods
+
 getTitle()      Retrieves the title of the element, such as "table" or "select"
 
 getContent()    Retrieves the elements between the opening and closing tags of the HTML element.
