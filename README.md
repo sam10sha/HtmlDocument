@@ -3,6 +3,8 @@ HTML Parser
 
 Instantiate the HTMLStringFactory with the source code of any webpage, given that the page contains HTML.
 
+LOADING OBJECTS
+
 Load objects with 2 methods:
 
 By ID:  loadElementById("example");
@@ -11,15 +13,18 @@ By ID:  loadElementById("example");
 By type and index:  loadElementByTypeAndIndex("table", 2);
                     This will load the 2nd "table" element in the entire document.
 
+SCOPE
+
 After loading the elements, the scope of the HTMLStringFactory will change to only the selected element, instead of the entire HTML page.
 
 To reset the scope of the HTMLStringFactory to the entire document, use:
 loadNewElementById() and loadNewElementByTypeAndIndex()
 
+HTML ELEMENT
+
 To receive the entire HTML as a single HTMLElement, use the commands:
 
 loadNewElementByTypeAndIndex("body", 0);
-
 getElement();
 
 This will provide all the HTML in a single HTMLElement.
